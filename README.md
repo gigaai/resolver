@@ -41,6 +41,11 @@ class SettingController extends Controller
 
 ## Usage
 Resolve steps is easy: create an instance, bind data and resolve.
+0. First, like other repo, you still need to composer require:
+```
+composer require gigaai/resolver
+```
+0. Then you need to `require 'vendor/autoload.php'`
 
 1. Create `$resolver` instance 
 ```php
