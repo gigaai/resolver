@@ -1,0 +1,19 @@
+{
+  "name": "gigaai/resolver",
+  "description": "A Minimal PHP Resolver that Works!",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "resolver"
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "GigaAI\\": "src/"
+    }
+  }
+}
