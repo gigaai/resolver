@@ -38,3 +38,26 @@ class SettingController extends Controller
 	}
 }
 ```
+
+## Usage
+Resolve steps is easy: create an instance, bind data and resolve.
+
+1. Create `$resolver` instance 
+```php
+$resolver = new GigaAI\Resolver\Resolver;
+```
+
+2. Bind [data] and resolve [method or function]
+```
+$resolver->bind([
+	'id' => 1,
+	'request' => $_REQUEST
+])->resolve([$class, 'method']);
+
+// or
+
+$resolver->bind([
+	'id' => 1,
+	'request' => $_REQUEST
+])->resolve('function_name');
+```
